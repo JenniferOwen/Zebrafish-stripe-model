@@ -1,5 +1,5 @@
 # Zebrafish-stripe-model
-Model for zebrafish pattern formation - as in elife paper (accepted): A quantitative model for zebrafish pattern formation by Jennifer Owen, Robert N Kelsh and Christian Yates.
+Model for zebrafish pattern formation - as in elife paper (accepted): A quantitative model for zebrafish pattern formation by Jennifer P. Owen, Robert N Kelsh and Christian Yates.
 
 This folder contains the following files suitable for use with matlab:
 
