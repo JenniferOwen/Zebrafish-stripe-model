@@ -57,6 +57,27 @@ Outputs - The initial conditions for the simulation
 Inputs - domain_matrix at time  t (with other relevant parameters)
 Outputs - updated domain_matrix at time  t given timed events occur (with other relevant parameters)
 
+5. parameters - generates parameters that change with time.
+Input: numbers of cells etc.
+Outputs - parameter list for time t (for Gillespie algorithm)
+
+6. FIND - finds position on domain where a cell of a certain type is located.
+Inputs
+x - cell of interest
+DM - domain matrix where cell occurs
+sizex, sizey - size of DM
+Outputs
+R,C position on DM where there exists an cell of type 'x'
+
+7. FIND_any - finds position on domain where a cell of any type is located.
+Inputs
+DM - domain matrix where cell occurs
+sizex, sizey - size of DM
+Outputs
+R,C position on DM where there exists an cell
+
+8. 
+
 calc_AR_p_speedup_diag_m
 calc_neighbours
 calc_neighbours_m
