@@ -62,46 +62,37 @@ Input: numbers of cells etc.
 Outputs - parameter list for time t (for Gillespie algorithm)
 
 6. FIND - finds position on domain where a cell of a certain type is located.
-Inputs
-x - cell of interest
-DM - domain matrix where cell occurs
-sizex, sizey - size of DM
-Outputs
-R,C position on DM where there exists an cell of type 'x'
 
-7. FIND_any - finds position on domain where a cell of any type is located.
-Inputs
-DM - domain matrix where cell occurs
-sizex, sizey - size of DM
-Outputs
-R,C position on DM where there exists an cell
+7. calc_AR_p_speedup_diag_m - Function checks the surroundings of R,C when cell type is located on X or I and outputs matrices of the numbers of cells in each position - to be used with the weighting vector (based on attraction/repulsion to cells to determine probability of moving in each given direction
 
-8. 
+8. calc_AR_p_speedup_diag_m - Function checks the surroundings of R,C when cell type is located on M and outputs matrices of the numbers of cells in each position - to be used with the weighting vector (based on attraction/repulsion to cells to determine probability of moving in each given direction
 
-calc_AR_p_speedup_diag_m
-calc_neighbours
-calc_neighbours_m
-calc_neighbours_xi_count_m
-check_empty
-check_iridophore_loose_or_dense
+9. FIND_any - finds position on domain where a cell of any type is located.
 
-FIND
-FIND_any
+10. prolif_p_speedup - updates the model based on a proliferation event
 
-initial_conditions
-p_movement_diag
-parameters
-prolif_p_speedup
-pull_xb_p
+11. calc_neighbours - Uses the uniform norm to calculate number of neighbours of type x on the SAME domain matrix at distance max_distance from space R,C.
+
+12. calc_neighbours_m -Uses the uniform norm to calculate number of neighbours to an m of type x on the x, i domain matrix at distance max_distance from space R,C.
+
+13. calc_neighbours_xi_count_m -Uses the uniform norm to calculate number of neighbours to an x or an i of type m at distance max_distance from space R,C.
+
+14. check_empty - checks a position is empty of all cell types in all layers
+
+15. check_iridophore_loose_or_dense - determines whether an iridophore should be loose or dense based on its surroundings.
+
+16. p_movement_diag - updates the model based on a movement event
+
+17. pull_xb_p - updates the model based on a 'pull' event
 
 Saving files
-parsave
-parsave_2
+1. PROF_SAVE_NOW - saves the domain matrices by calling ...
+2. parsave_2 - save the domain_matrices
 
 Plotting files
-plot_and_save_zebrafish
-plot_initial_position
-plot_zebrafish
-PROF_SAVE_NOW
+1. plot_and_save_zebrafish - plots and saves the cell positions determined from the domain matrices as a visual pattern
+
+2. plot_zebrafish - plots the cell positions determined from the domain matrices as a visual pattern without saving
+
 
 
