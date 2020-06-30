@@ -3,7 +3,7 @@ Model for zebrafish pattern formation - as in elife paper (accepted): A quantita
 
 This folder contains the following files suitable for use with matlab:
 
-The user is reccommended to use the 'reader' file for simulations.
+The user is reccommended to use the 'reader' file for simulations, followed by the plotting functions for visualisation.
 
 Reader function
 1. reader.m - run this file to generate plots for zebrafish mutants; WT, nac, shd, pfe, rse, cho, sbr, seurat, leo and save for different time points (subject to answers from prompts)
