@@ -88,7 +88,8 @@ Outputs - parameter list for time t (for Gillespie algorithm)
 17. pull_xb_p - updates the model based on a 'pull' event
 
 Saving files
-1. PROF_SAVE_NOW - saves the domain matrices by calling ...
+1. PROF_SAVE_NOW - saves the domain matrices by calling parsave2
+2. parsave - save the domain_matrices (different format to...)
 2. parsave_2 - save the domain_matrices
 
 Plotting files
