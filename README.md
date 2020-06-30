@@ -1,12 +1,14 @@
 # Zebrafish-stripe-model
-Model for zebrafish pattern formation
+Model for zebrafish pattern formation - as in elife: A quantitative model for zebrafish pattern formation
 
 This folder contains the following files suitable for use with matlab:
+
+The user is reccommended to use the 'reader' file for simulations.
 
 Reader function
 1. reader.m - run this file to generate plots for zebrafish mutants; WT, nac, shd, pfe, rse, cho, sbr, seurat, leo and save for different time points (subject to answers from prompts)
 Full list of mutant types:
-WT,nac,pfe,shd,leo,leo_shd,leo_nac,leo_pfe,sbr,ablation,kondo_exp,vertical_stripe,ablate_iridophore,move_up_stripe,initially_stripey,tall_domain,small_domain
+WT,nac,pfe,shd,leo,leo_shd,leo_nac,leo_pfe,sbr,seurat,ablation,kondo_exp,vertical_stripe,ablate_iridophore,move_up_stripe,initially_stripey,tall_domain,small_domain
 
 Main function
 1. main.m - This file is the main document which generates the zebrafish simulations. For best use of this file, run reader.m
@@ -91,7 +93,6 @@ Saving files
 
 Plotting files
 1. plot_and_save_zebrafish - plots and saves the cell positions determined from the domain matrices as a visual pattern
-
 2. plot_zebrafish - plots the cell positions determined from the domain matrices as a visual pattern without saving
 
 
