@@ -6,7 +6,7 @@ This folder contains the following files suitable for use with matlab:
 Reader function
 1. reader.m - run this file to generate plots for zebrafish mutants; WT, nac, shd, pfe, rse, cho, sbr, seurat, leo and save for different time points (subject to answers from prompts)
 Full list of mutant types:
-WT,nac,pfe,shd,leo,leo_shd,leo_nac,leo_pfe,sbr,ablation,kondo_exp
+WT,nac,pfe,shd,leo,leo_shd,leo_nac,leo_pfe,sbr,ablation,kondo_exp,vertical_stripe,ablate_iridophore,move_up_stripe,initially_stripey,tall_domain,small_domain
 
 Main function
 1. main.m - This file is the main document which generates the zebrafish simulations. For best use of this file, run reader.m
@@ -40,18 +40,30 @@ xan_on - whether or not xanthophores are present in mutant
 mel_on - whether or not melanophores are present in mutant
 irr_on - whether or not iridophores are present in mutant
 
-2. fixed_parameters
+2. fixed_parameters - creates a list of parameters that are fixed across time (not influenced by number of cells).
 Input - mutant_type
 Outputs - all parameters that are fixed across time.
 
-2. calc_AR_p_speedup_diag
+3. Initial_conditions - generates the initial condition of the given simulation.
+Inputs
+mutant_type (WT, nac, shd, pfe, rse, cho, sbr, seurat, leo etc)
+N_xb - initial number of xanthoblasts (as determined in determine_mutant)
+N_m - initial number of melanophores (as determined in determine_mutant)
+mel_on - whether or not melanophores are present in mutant
+irr_on - whether or not iridophores are present in mutant
+Outputs - The initial conditions for the simulation
+
+4. check_timed_events - updates model based on events that occur during timeline.
+Inputs - domain_matrix at time  t (with other relevant parameters)
+Outputs - updated domain_matrix at time  t given timed events occur (with other relevant parameters)
+
 calc_AR_p_speedup_diag_m
 calc_neighbours
 calc_neighbours_m
 calc_neighbours_xi_count_m
 check_empty
 check_iridophore_loose_or_dense
-check_timed_events
+
 FIND
 FIND_any
 
