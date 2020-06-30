@@ -8,7 +8,7 @@ The user is reccommended to use the 'reader' file for simulations, followed by t
 Reader function
 1. reader.m - run this file to generate plots for zebrafish mutants; WT, nac, shd, pfe, rse, cho, sbr, seurat, leo and save for different time points (subject to answers from prompts)
 Full list of mutant types:
-WT,nac,pfe,shd,leo,leo_shd,leo_nac,leo_pfe,sbr,seurat,ablation,kondo_exp,vertical_stripe,ablate_iridophore,move_up_stripe,initially_stripey,tall_domain,small_domain
+WT, nac, pfe, shd, leo, shd_pfe, nac_pfe, nac_shd, leo_shd, leo_nac, leo_pfe, sbr, seurat, ablation, vertical_stripe, ablate_iridophore, move_up_stripe, initially_stripey, tall_domain, small_domain
 
 Main function
 1. main.m - This file is the main document which generates the zebrafish simulations. For best use of this file, run reader.m
